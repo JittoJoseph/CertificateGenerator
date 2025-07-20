@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate of Participation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .certificate-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      .inner-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .decorative-border {
+        background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+        background-size: 200% 200%;
+        animation: shimmer 3s ease-in-out infinite;
+      }
+
+      @keyframes shimmer {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .ornament {
+        background: radial-gradient(
+          circle,
+          rgba(102, 126, 234, 0.1) 0%,
+          transparent 70%
+        );
+      }
+
+      .title-glow {
+        text-shadow: 0 0 20px rgba(118, 75, 162, 0.3);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-8">
+    <div class="certificate-card w-full max-w-4xl aspect-[4/3] rounded-2xl p-6">
+      <div class="inner-card h-full rounded-xl p-12 relative overflow-hidden">
+        <!-- Decorative corners -->
+        <div class="absolute top-0 left-0 w-24 h-24 opacity-10">
+          <svg viewBox="0 0 100 100" class="w-full h-full text-purple-600">
+            <path
+              d="M10 10 Q10 10 50 10 Q90 10 90 50 Q90 90 50 90 Q10 90 10 50 Z"
+              fill="currentColor"
+              opacity="0.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute top-0 right-0 w-24 h-24 opacity-10 transform rotate-90"
+        >
+          <svg viewBox="0 0 100 100" class="w-full h-full text-purple-600">
+            <path
+              d="M10 10 Q10 10 50 10 Q90 10 90 50 Q90 90 50 90 Q10 90 10 50 Z"
+              fill="currentColor"
+              opacity="0.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-24 h-24 opacity-10 transform rotate-270"
+        >
+          <svg viewBox="0 0 100 100" class="w-full h-full text-purple-600">
+            <path
+              d="M10 10 Q10 10 50 10 Q90 10 90 50 Q90 90 50 90 Q10 90 10 50 Z"
+              fill="currentColor"
+              opacity="0.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute bottom-0 right-0 w-24 h-24 opacity-10 transform rotate-180"
+        >
+          <svg viewBox="0 0 100 100" class="w-full h-full text-purple-600">
+            <path
+              d="M10 10 Q10 10 50 10 Q90 10 90 50 Q90 90 50 90 Q10 90 10 50 Z"
+              fill="currentColor"
+              opacity="0.5"
+            />
+          </svg>
+        </div>
+
+        <!-- Header: Emphasized Event Title -->
+        <div class="text-center mb-8">
+          <div
+            class="decorative-border h-2 w-40 mx-auto rounded-full mb-4"
+          ></div>
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-purple-800 tracking-wide title-glow mb-2"
+            style="font-family: 'Playfair Display', serif"
+          >
+            🎨 AI Prompting Challenge 2025 🤖
+          </h1>
+          <div
+            class="decorative-border h-1 w-32 mx-auto rounded-full mb-2"
+          ></div>
+          <p
+            class="text-xl text-gray-700 font-medium mt-2"
+            style="font-family: 'Inter', sans-serif"
+          >
+            Certificate of Participation
+          </p>
+          <div
+            class="decorative-border h-1 w-32 mx-auto rounded-full mt-4"
+          ></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex flex-col items-center justify-center space-y-8 mt-4">
+          <p
+            class="text-lg text-gray-700"
+            style="font-family: 'Inter', sans-serif"
+          >
+            This is to certify that
+          </p>
+          <!-- Name placeholder: smaller, centered -->
+          <div class="relative">
+            <div
+              class="bg-gradient-to-r from-purple-50 to-blue-50 border-2 border-dashed border-purple-300 rounded-lg py-4 px-8 mx-auto max-w-md"
+            >
+              <p
+                class="text-2xl font-bold text-gray-800 text-center"
+                style="font-family: 'Playfair Display', serif"
+              >
+                [Participant Name]
+              </p>
+            </div>
+          </div>
+          <p
+            class="text-lg text-gray-700 text-center"
+            style="font-family: 'Inter', sans-serif"
+          >
+            has successfully participated in the event held at
+            <span class="font-semibold text-purple-700"
+              >Bishop Vayalil Memorial Holy Cross College, Cherpunkal</span
+            >
+            on <span class="font-semibold text-purple-700">July 22, 2025</span>.
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-12 left-12 right-12">
+          <div class="flex justify-between items-center">
+            <div class="text-left">
+              <p class="text-sm font-semibold text-gray-700">
+                Bishop Vayalil Memorial
+              </p>
+              <p class="text-sm font-semibold text-gray-700">
+                Holy Cross College
+              </p>
+              <p class="text-xs text-gray-500 mt-1">
+                Department of Computer Applications
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div class="decorative-border h-0.5 w-24 rounded-full mb-2"></div>
+              <p class="text-xs text-gray-500">July 22, 2025</p>
+            </div>
+
+            <div class="text-right">
+              <div class="w-32 border-b border-gray-400 mb-1"></div>
+              <p class="text-xs text-gray-600">Authorized Signature</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
