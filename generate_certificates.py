@@ -3,7 +3,7 @@ import os
 from tqdm import tqdm
 from playwright.sync_api import sync_playwright
 
-TEMPLATE_PATH = "template.html"
+TEMPLATE_PATH = "template2.html"
 CSV_PATH = "data/names.csv"
 OUTPUT_DIR = "certificates"
 
