@@ -1,6 +1,6 @@
 # Certificate Generator for AI Prompting Challenge 2025
 
-![Certificate Example](certificates/example.png)
+![Certificate Example](example.png)
 
 ## Overview
 
