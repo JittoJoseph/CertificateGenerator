@@ -75,10 +75,6 @@ Certificates will be saved in the `certificates/` folder as `<name>_<no>.png`.
 - **Resolution:** Adjust viewport and zoom in `generate_certificates.py`.
 - **Branding:** Update logo and colors as needed.
 
-## Example Output
-
-![Sample Certificate](certificates/example.png)
-
 ## Purpose
 
 - Developed for the AI Prompting Challenge 2025
