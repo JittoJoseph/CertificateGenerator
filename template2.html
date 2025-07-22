@@ -1,214 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certificate of Participation</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .certificate-card {
-        background: radial-gradient(
-            circle at 20% 30%,
-            rgba(102, 126, 234, 0.8) 0%,
-            transparent 40%
-          ),
-          radial-gradient(
-            circle at 80% 70%,
-            rgba(45, 212, 191, 0.7) 0%,
-            transparent 40%
-          ),
-          radial-gradient(
-            circle at 60% 20%,
-            rgba(20, 184, 166, 0.6) 0%,
-            transparent 35%
-          ),
-          radial-gradient(
-            circle at 30% 80%,
-            rgba(134, 239, 172, 0.5) 0%,
-            transparent 45%
-          ),
-          linear-gradient(
-            135deg,
-            #667eea 0%,
-            #14b8a6 30%,
-            #2dd4bf 70%,
-            #667eea 100%
-          );
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
-          inset 0 1px 0 rgba(255, 255, 255, 0.2);
-      }
 
-      .inner-card {
-        background: radial-gradient(
-            circle at 15% 25%,
-            rgba(255, 255, 255, 0.9) 0%,
-            transparent 30%
-          ),
-          radial-gradient(
-            circle at 85% 75%,
-            rgba(240, 253, 244, 0.8) 0%,
-            transparent 35%
-          ),
-          radial-gradient(
-            circle at 50% 50%,
-            rgba(236, 253, 245, 0.7) 0%,
-            transparent 40%
-          ),
-          linear-gradient(135deg, #ffffff 0%, #f0fdf4 50%, #ecfdf5 100%);
-        box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate of Participation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    .certificate-card {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      border: 8px solid #1e40af;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+        inset 0 0 0 4px #3b82f6,
+        inset 0 0 0 8px #ffffff;
+    }
 
-      .decorative-border {
-        background: linear-gradient(45deg, #ffd700, #2dd4bf, #ffd700);
-      }
+    .inner-card {
+      background: #ffffff;
+      border: 2px solid #1e40af;
+      position: relative;
+    }
 
-      .title-glow {
-        text-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
-      }
-    </style>
-  </head>
-  <body
-    class="min-h-screen flex items-center justify-center p-0 fluid-background blur-orbs relative overflow-hidden"
-  >
-    <!-- Fluid overlay for additional depth -->
-    <div class="absolute inset-0 fluid-overlay"></div>
+    .decorative-corner {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #1e40af;
+    }
 
-    <!-- Glass morphism backdrop -->
-    <div class="absolute inset-0 backdrop-blur-sm bg-white/10"></div>
-    <div
-      class="certificate-card w-full max-w-5xl aspect-[4/3] rounded-2xl p-4 relative z-10"
-    >
-      <div
-        class="inner-card h-full rounded-xl p-8 relative overflow-hidden flex flex-col"
-      >
-        <!-- Top Header: Logo + College Info -->
-        <div class="flex items-center justify-between mb-6">
-          <div class="flex items-center space-x-4">
-            <img
-              src="images/college_logo.png"
-              alt="College Logo"
-              class="w-16 h-16 object-contain rounded-full shadow-md border-2 border-teal-200"
-            />
-            <div class="text-left">
-              <h2
-                class="text-lg font-bold text-gray-800"
-                style="font-family: 'Inter', sans-serif"
-              >
-                Bishop Vayalil Memorial Holy Cross College
-              </h2>
-              <p class="text-sm text-gray-600">Cherpunkal</p>
-              <p class="text-xs text-teal-600 font-medium">
-                Department of Computer Applications
-              </p>
-            </div>
-          </div>
-          <div class="text-right text-sm text-gray-500">
-            <p>July 22, 2025</p>
+    .corner-tl {
+      top: 20px;
+      left: 20px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .corner-tr {
+      top: 20px;
+      right: 20px;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .corner-bl {
+      bottom: 20px;
+      left: 20px;
+      border-right: none;
+      border-top: none;
+    }
+
+    .corner-br {
+      bottom: 20px;
+      right: 20px;
+      border-left: none;
+      border-top: none;
+    }
+
+    .ornamental-line {
+      background: linear-gradient(90deg, transparent, #1e40af, transparent);
+      height: 2px;
+    }
+
+    .signature-line {
+      border-bottom: 2px solid #1e40af;
+      width: 150px;
+      margin: 0 auto 8px;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4 bg-gray-100">
+  <div class="certificate-card w-full max-w-5xl aspect-[4/3] p-6 relative">
+    <div class="inner-card h-full p-12 relative flex flex-col">
+      <!-- Decorative Corners -->
+      <div class="decorative-corner corner-tl"></div>
+      <div class="decorative-corner corner-tr"></div>
+      <div class="decorative-corner corner-bl"></div>
+      <div class="decorative-corner corner-br"></div>
+
+      <!-- Top Header: Logo + College Info -->
+      <div class="flex items-center justify-between mb-8">
+        <div class="flex items-center space-x-4">
+          <img src="images/college_logo.png" alt="College Logo"
+            class="w-16 h-16 object-contain rounded-full shadow-md border-2 border-blue-200" />
+          <div class="text-left">
+            <h2 class="text-lg font-bold text-blue-900" style="font-family: 'Playfair Display', serif">
+              Bishop Vayalil Memorial Holy Cross College
+            </h2>
+            <p class="text-sm text-blue-700">Cherpunkal</p>
+            <p class="text-xs text-blue-600 font-medium">
+              Department of Computer Applications
+            </p>
           </div>
         </div>
+        <div class="text-right text-sm text-gray-500">
+          <p>July 22, 2025</p>
+        </div>
+      </div>
 
-        <!-- Decorative Separator -->
-        <div class="decorative-border h-1 w-full rounded-full mb-8"></div>
+      <!-- Certificate Title -->
+      <div class="text-center mb-8">
+        <h1 class="text-5xl font-bold text-blue-900 mb-2" style="font-family: 'Playfair Display', serif">
+          CERTIFICATE
+        </h1>
+        <p class="text-2xl text-blue-700 font-light tracking-wide" style="font-family: 'Playfair Display', serif">
+          of Participation
+        </p>
+      </div>
 
-        <!-- Main Certificate Content -->
-        <div class="flex-1 flex flex-col justify-center text-center space-y-6">
-          <!-- Certificate Title -->
-          <div>
-            <h1
-              class="text-4xl font-bold mb-2"
-              style="
-                font-family: 'Poppins', sans-serif;
-                background: linear-gradient(
-                  135deg,
-                  #667eea 0%,
-                  #14b8a6 50%,
-                  #2dd4bf 100%
-                );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-              "
-            >
-              Certificate
-            </h1>
-            <p
-              class="text-xl text-gray-600 font-light"
-              style="font-family: 'Poppins', sans-serif"
-            >
-              of Participation
-            </p>
-          </div>
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col justify-center text-center space-y-4">
+        <!-- Event Title -->
+        <div class="mb-4">
+          <h3 class="text-2xl font-bold text-blue-800 mb-2" style="font-family: 'Playfair Display', serif">
+            AI Prompting Challenge 2025
+          </h3>
+          <p class="text-lg text-gray-600">July 22, 2025</p>
+        </div>
 
-          <!-- Event Title -->
-          <div
-            class="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-lg py-4 px-6 mx-auto max-w-2xl border border-teal-200"
-          >
-            <h3
-              class="text-2xl font-bold text-teal-700 title-glow"
-              style="font-family: 'Playfair Display', serif"
-            >
-              🎨 AI Prompting Challenge 2025 🤖
-            </h3>
-          </div>
+        <!-- Certification Text -->
+        <div class="space-y-4 mb-6">
+          <p class="text-xl text-gray-700" style="font-family: 'Poppins', sans-serif">
+            This is to certify that
+          </p>
 
-          <!-- Certification Text -->
-          <div class="space-y-4">
-            <p
-              class="text-lg text-gray-700"
-              style="font-family: 'Poppins', sans-serif; font-weight: 400"
-            >
-              This is to certify that
-            </p>
-
-            <!-- Participant Name -->
-            <div
-              class="bg-white border-2 border-dashed border-teal-300 rounded-lg py-6 px-8 mx-auto max-w-lg shadow-sm"
-            >
-              <p
-                class="text-2xl font-bold text-gray-800"
-                style="
+          <!-- Participant Name -->
+          <div class="my-6">
+            <div class="signature-line"></div>
+            <p class="text-3xl font-medium text-blue-900 mt-2" style="
                   font-family: 'Poppins', sans-serif;
-                  font-weight: 600;
-                  letter-spacing: 0.5px;
-                "
-              >
-                [Participant Name]
-              </p>
-            </div>
-
-            <p
-              class="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed"
-              style="font-family: 'Poppins', sans-serif; font-weight: 400"
-            >
-              Successfully took part in the event and showed creativity in AI
-              image generation using smart prompting.
+                  letter-spacing: 1.5px;
+                  font-weight: 500;
+                  font-style: italic;
+                ">
+              Jitto Joseph
             </p>
           </div>
+
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6"
+            style="font-family: 'Poppins', sans-serif">
+            has successfully participated in the AI Prompting Challenge 2025 and demonstrated
+            creativity and innovation in AI image generation through intelligent prompting techniques.
+          </p>
         </div>
 
-        <!-- Bottom Footer -->
-        <div class="mt-8 pt-6 border-t border-gray-200">
-          <div class="flex justify-between items-center">
-            <!-- Left: Staff Coordinators -->
-            <div class="text-left">
-              <p class="text-xs text-gray-500 mb-1">Staff Coordinator</p>
-              <div class="w-28 border-b border-gray-400 mb-1"></div>
-              <p class="text-xs font-medium text-gray-700">Remimol P Thomas</p>
+        <!-- Signatures Section - Integrated within main content -->
+        <div class="pt-4">
+          <div class="grid grid-cols-3 gap-6 max-w-3xl mx-auto px-16">
+            <!-- Staff Coordinator -->
+            <div class="text-center mb-4">
+              <div class="w-28 h-0.5 bg-blue-900 mx-auto mb-2"></div>
+              <p class="text-sm font-medium text-gray-800 mb-1">Remimol P Thomas</p>
+              <p class="text-xs text-gray-600">Staff Coordinator</p>
             </div>
 
-            <!-- Right: Authority -->
-            <div class="text-right">
-              <p class="text-xs text-gray-500 mb-1">Head of Department</p>
-              <div class="w-28 border-b border-gray-400 mb-1"></div>
-              <p class="text-xs font-medium text-gray-700">Seena S Nair</p>
+            <!-- Head of Department -->
+            <div class="text-center mb-4">
+              <div class="w-28 h-0.5 bg-blue-900 mx-auto mb-2"></div>
+              <p class="text-sm font-medium text-gray-800 mb-1">Seena S Nair</p>
+              <p class="text-xs text-gray-600">Head of Department</p>
+            </div>
+
+            <!-- Principal -->
+            <div class="text-center mb-4">
+              <div class="w-28 h-0.5 bg-blue-900 mx-auto mb-2"></div>
+              <p class="text-sm font-medium text-gray-800 mb-1">Dr. Baby Sebastian</p>
+              <p class="text-xs text-gray-600">Principal</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
